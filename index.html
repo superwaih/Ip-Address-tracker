@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+  
+  
+  
+  <title>IP Address Tracker</title>
+  
+</head>
+<body>
+  <div class="container top">
+    <div class="bgText">
+     <h3 id="ipTag">IP Address Tracker</h3>
+ 
+     <div class="searchBox" >
+       <input  id="ipBar" type="text" placeholder="Search for any IP address or domain">
+       <button id="find"><img src="/ip-address-tracker-master/images/icon-arrow.svg" alt=""></button>
+     </div>
+    </div>
+    
+ 
+    
+   </div>
+     <div class="results">
+      <div class="ipOne">
+       <p class="text">IP Address</p>
+       <span class="result-text" id="result-ip">Loading...</span>
+     </div>
+     <div class="vl"></div>
+     <div class="ipTwo">
+       <p class="text">Location</p>
+       <span class="result-text" id="iplocation">Loading...</span>
+     </div>
+     <div class="vl"></div>
+     <div class="ipThree">
+       <p class="text">Timezone</p>
+       <span class="result-text" id="ipTimezone">Loading...</span>
+     </div>
+     <div class="vl"></div>
+     <div class="ipFour">
+       <p class="text">ISP</p>
+       <span class="result-text" id="ip-isp">Loading...</span>
+     </div>
+ 
+   </div>
+ 
+   <div  id="map"></div>
+ 
+   
+ 
+   
+   
+   <div class="attribution">
+     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+     Coded by <a href="#">Boda Wale</a>.
+   </div>
+   <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+   <script src="./script.js"></script>
+</body>
+</html>

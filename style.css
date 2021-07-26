@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+:root, :before, ::after{
+    margin: 0;
+    padding: 0;
+   --VeryDarkGray: hsl(0, 0%, 17%);
+   --DarkGray: hsl(0, 0%, 59%);
+
+}
+body{
+    font-family:'Rubik', sans-serif;
+    font-weight: 300 400 500;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.top{
+    background-image: url(/ip-address-tracker-master/images/pattern-bg.png);
+    background-size: cover;
+    height: 35vh;
+    /* width: fit-content; */
+}
+.bgText{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#ipTag{
+    color: #fff;
+    font-weight: 600;
+    
+}
+.searchBox{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+button, input{
+    border: none;
+}
+button :hover{
+    opacity: 0.7;
+}
+#ipBar{
+    min-width: 300px;
+    height: 40px;
+    border-radius: 15px 0px 0px 15px;
+    outline: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+#find{
+    height: 50px;
+    min-width: 45px;
+    background-color: black;
+    border-radius: 0px 10px 10px 0px;
+    outline: none; 
+    cursor: pointer;   
+}
+.results{
+    background-color: #fff;
+    display: flex;
+    height: 9rem;
+    width: 70%;
+    justify-content:space-between;
+    position:absolute;
+    left: 50%;
+    border-radius: 10px;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    padding: 14px;
+    text-align: center;
+    z-index: 2;
+}
+.result-text{
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+.text{
+    color: var(--DarkGray);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.vl{
+    border-left: 0.2px solid var(--DarkGray);
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+#map{
+    z-index: 1;
+    height: 45rem;
+    width: 100%;
+}
+@media (max-width: 500px) {
+    body{ 
+        /* display: flex;
+        flex-direction: row; */
+    }
+    .top{
+        
+    }
+    .results{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 25rem;
+        width: 200px;
+        z-index: 2;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        
+    }
+    #ipBar{
+        width: 2rem;
+    }
+    .map{
+        height: 30rem;
+        width: 597px;
+        z-index: 1;
+
+    }
+    input::placeholder{
+        font-size: 0.9em;
+    }
+
+    /* .attribution
+    {
+        position: absolute;
+        top: 500rem;
+    } */
+    
+}
