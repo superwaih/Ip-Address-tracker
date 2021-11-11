@@ -13,12 +13,22 @@ var pinIcon = L.icon({
 
 const ipInput = document.getElementById('ipBar');
 const ipBtn = document.getElementById('find');
+// const ipBar = document.getElementById('ipBar');
+// const findIp =document.getElementById('find')
+
 
 const resultIp = document.getElementById('result-ip');
 const resultIsp = document.getElementById('ip-isp');
 const resultLocation = document.getElementById('iplocation');
 const resultTimezone = document.getElementById('ipTimezone');
 const resultError = document.getElementById('ip-error');
+
+// Manually  searching for an IP address
+
+// findIp.onclick = () => {
+//     const ipSearch = ipBar.value;
+
+// }
 
 
 //Calls API on local IP on page load
@@ -62,35 +72,6 @@ function ipForm(response) {
 
 
 
-
-
-
-
-// let findIP = document.querySelector('#find');
-
-
-// findIP.onclick = function (){
-//     document.querySelector('.results').innerHTML += `<div class="ipOne">
-//     <p class="text">IP Address</p>
-//     <span>${document.querySelector('#ipBar').value}</span>
-//   </div>
-//   <div class="vl"></div>
-//   <div class="ipTwo">
-//     <p class="text">Location</p>
-//     <span>Ijebu ode</span>
-//   </div>
-//   <div class="vl"></div>
-//   <div class="ipThree">
-//     <p class="text">Timezone</p>
-//     <span>West Africa</span>
-//   </div>
-//   <div class="vl"></div>
-//   <div class="ipFour">
-//     <p class="text">ISP</p>
-//     <span>MTN</span>`
-// }
-
-// console.log(document.querySelector('#ipBar').value);
 
 
 

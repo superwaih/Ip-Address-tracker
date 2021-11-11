@@ -16,7 +16,7 @@ body{
     
 }
 .top{
-    background-image: url('/ip-address-tracker-master/images/pattern-bg.png');
+    background-image: url(./images/pattern-bg.png);
     background-size: cover;
     height: 35vh;
     /* width: fit-content; */
